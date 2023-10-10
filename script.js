@@ -8,15 +8,16 @@ const items = document.getElementsByClassName("price");
 
 for(let i=0; i<items.length; i++)
 	{
-      sum = sum + (+items[i].textContent); 
+      sum = sum + (+items[i].textContent);
     }
+const last = document.getElementById("last")
+const td = document.createElement("td")
+	td.innerHTML = `${sum}`
 
-const table = document.createElement("table")
-	table.innerHTML = `<tr><td>${sum}</td></tr>`
-
-document.body.appendChild(table);
+last.appendChild(td)
+// document.body.appendChild(table);
 	
 };
 
-getSumBtn.addEventListener("click", getSum);
+getSumBtn.addEventListener("click",getSum);
 
