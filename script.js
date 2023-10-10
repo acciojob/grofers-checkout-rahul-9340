@@ -10,11 +10,11 @@ for(let i=0; i<items.length; i++)
 	{
       sum = sum + (+items[i].textContent);
     }
-const last = document.getElementById("last")
-const td = document.createElement("td")
-	td.innerHTML = `${sum}`
+const table = document.getElementById("table")
+const tr = document.createElement("tr")
+	tr.innerHTML = `<td colspan="2">${sum}</td>`
 
-last.appendChild(td)
+table.appendChild(tr)
 // document.body.appendChild(table);
 	
 };
